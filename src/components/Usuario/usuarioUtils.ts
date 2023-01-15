@@ -77,5 +77,5 @@ export const obterNomeAnimalAleatorio = () => {
   const animalAleatorio = ANIMAIS[Math.floor(Math.random() * ANIMAIS.length)];
   const nomeTratado =
     animalAleatorio.nome[0].toUpperCase() + animalAleatorio.nome.slice(1);
-  return `${nomeTratado} aletóri${animalAleatorio.masculino ? "o" : "a"}`;
+  return `${nomeTratado} anônim${animalAleatorio.masculino ? "o" : "a"}`;
 };

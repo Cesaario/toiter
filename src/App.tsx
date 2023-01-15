@@ -1,9 +1,10 @@
+import { useState } from "react";
 import Banner from "./components/Banner/Banner";
 import NovoToite from "./components/NovoToite/NovoToite";
 import Toites from "./components/Toites/Toites";
-import "./App.css";
 import Usuario from "./components/Usuario/Usuario";
-import { useState } from "react";
+import "./shared/firebase";
+import "./App.css";
 
 function App() {
   const [nome, setNome] = useState("");
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <NovoToite />
+      <NovoToite nome={nome} />
       <Toites />
       <Usuario nome={nome} setNome={setNome} />
     </div>

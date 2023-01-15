@@ -8,7 +8,7 @@
 .novoToite textarea {
   resize: none;
   font-size: 16px;
-  padding: 4px;
+  padding: 8px;
   font-family: "Trebuchet MS", sans-serif;
   border-radius: 8px;
   border: solid #43a047 1px; /*green[600]*/
@@ -17,7 +17,7 @@
 }
 
 .novoToite textarea:focus {
-  border: solid #43a047 1px; /*green[600]*/
+  outline: solid #43a047 1px; /*green[600]*/
 }
 
 .novoToite button {
@@ -34,6 +34,12 @@
 .novoToite button:hover {
   background-color: #388e3c; /*green[700]*/
   cursor: pointer;
+}
+
+.novoToite button:disabled {
+  border: solid #757575 1px;
+  background-color: #9e9e9e;
+  cursor: default;
 }
 
 .novoToite span {
