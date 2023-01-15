@@ -1,0 +1,42 @@
+.novoToite {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.novoToite textarea {
+  resize: none;
+  font-size: 16px;
+  padding: 4px;
+  font-family: "Trebuchet MS", sans-serif;
+  border-radius: 8px;
+  border: solid #43a047 1px; /*green[600]*/
+  height: 5rem;
+  width: 30rem;
+}
+
+.novoToite textarea:focus {
+  border: solid #43a047 1px; /*green[600]*/
+}
+
+.novoToite button {
+  width: 40%;
+  height: 30px;
+  border-radius: 15px;
+  border: solid #43a047 1px; /*green[600]*/
+  background-color: #66bb6a; /*green[400]*/
+  color: white;
+  font-weight: 700;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.novoToite button:hover {
+  background-color: #388e3c; /*green[700]*/
+  cursor: pointer;
+}
+
+.novoToite span {
+  font-size: 12px;
+  align-self: flex-end;
+}

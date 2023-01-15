@@ -1,0 +1,28 @@
+.toite {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.toite .autorToite {
+  display: flex;
+  align-items: center;
+}
+
+.toite .autorToite img {
+  margin-right: 8px;
+}
+
+.toite:not(:last-child) {
+  border-bottom: solid #43a047 1px; /*green[600]*/
+}
+
+.toite span {
+  font-weight: 700;
+}
+
+.toite p {
+  word-wrap: break-word;
+  margin: 8px 8px 8px 28px;
+}
